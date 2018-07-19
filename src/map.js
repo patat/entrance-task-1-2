@@ -50,4 +50,7 @@ export function initMap(ymaps, containerId) {
       obj => filters[obj.isActive ? 'active' : 'defective']
     );
   });
+
+  // Add objectManager to geoObjects collection on myMap instance
+  myMap.geoObjects.add(objectManager);
 }
