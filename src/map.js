@@ -2,7 +2,7 @@ import { loadList, loadDetails } from './api';
 import { getDetailsContentLayout } from './details';
 import { createFilterControl } from './filter';
 
-export function initMap(ymaps, containerId) {
+export function initMap (ymaps, containerId) {
   const myMap = new ymaps.Map(containerId, {
     center: [55.76, 37.64],
     controls: [],
@@ -25,7 +25,7 @@ export function initMap(ymaps, containerId) {
   objectManager.clusters.events.add(['add'], event => {
     const cluster = event.get('child');
 
-    //console.log(cluster.properties.geoObjects);
+    // console.log(cluster.properties.geoObjects);
     if (cluster.properties.geoObjects.filter(geoObject => !geoObject.isActive).length > 0) {
       objectManager.clusters.setClusterOptions(cluster.id, {
         preset: 'islands#redClusterIcons'

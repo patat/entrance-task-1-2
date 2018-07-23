@@ -1,6 +1,7 @@
-import { initMap } from "./map";
+/* global ymaps */
+import { initMap } from './map';
 
 ymaps.ready(() => {
-  initMap(ymaps, "map");
-  console.log("inited");
+  initMap(ymaps, 'map');
+  console.log('inited');
 });
