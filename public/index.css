@@ -41,3 +41,8 @@ body,
 .details-state_connections {
   background-color: gray;
 }
+
+.details-location {
+  font-size: 0.8em;
+  color: gray;
+}
