@@ -25,7 +25,7 @@ export function getDetailsContentLayout(ymaps) {
                 Идет загрузка данных...
             </div>
         {% endif %}
-    `,
+    </div>`,
     {
       build: function() {
         BalloonContentLayout.superclass.build.call(this);
